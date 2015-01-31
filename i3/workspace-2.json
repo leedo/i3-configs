@@ -1,0 +1,64 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1716,
+               "width": 3194,
+               "x": 3,
+               "y": 37
+            },
+            "name": "New Tab - Chromium",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Chromium$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1716,
+               "width": 3194,
+               "x": 3,
+               "y": 37
+            },
+            "name": "Lee Aylward - Outlook Web App",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Chromium$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1716,
+               "width": 3194,
+               "x": 3,
+               "y": 37
+            },
+            "name": "1Password",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Chromium$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

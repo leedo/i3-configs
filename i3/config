@@ -32,9 +32,10 @@ bindsym $mod+Return exec urxvtcd
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym $mod+d kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Sergoe UI Regular'
+bindsym $mod+space exec dmenu_run -fn 'Sergoe UI Regular'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -84,7 +85,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -129,16 +130,16 @@ bindsym $mod+Shift+r restart
 bindsym --release $sup+v exec --no-startup-id leepaste
 
 # brightness controls
-bindsym $sup+minus exec --no-startup-id xbacklight -time 100 -3
-bindsym $sup+equal exec --no-startup-id xbacklight -time 100 +3
-bindsym $sup+Shift+minus exec --no-startup-id xbacklight -time 250 -8
-bindsym $sup+Shift+equal exec --no-startup-id xbacklight -time 250 +8
+bindsym $sup+minus exec --no-startup-id xbacklight -time 100 -1
+bindsym $sup+equal exec --no-startup-id xbacklight -time 100 +1
+bindsym $sup+Shift+minus exec --no-startup-id xbacklight -time 250 -5
+bindsym $sup+Shift+equal exec --no-startup-id xbacklight -time 250 +5
 
 # volume
 bindsym $sup+9 exec --no-startup-id pactl set-sink-volume 1 -- -10%
 bindsym $sup+0 exec --no-startup-id pactl set-sink-volume 1 -- +10%
 
-bindsym $sup+p exec --no-startup-id /home/leedo/bin/screenshot
+bindsym $sup+p exec --no-startup-id screenshot
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -190,3 +191,5 @@ client.focused #d70a53 #d70a53 #ffffff #d70a53
 client.focused_inactive #333333 #333333 #888888 #333333
 client.unfocused #333333 #333333 #888888 #333333
 client.urgent #eb709b #eb709b #ffffff #eb709b
+
+exec --no-startup-id i3-startup
