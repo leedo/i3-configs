@@ -28,11 +28,11 @@ set $sup Mod4
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtcd
+bindsym $mod+Return exec i3-window-warp exec urxvtcd
 
 # kill focused window
-bindsym $mod+Shift+q kill
-bindsym $mod+d kill
+bindsym $mod+Shift+q exec --no-startup-id i3-window-warp kill
+bindsym $mod+d exec --no-startup-id i3-window-warp kill
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec dmenu_run -fn 'Sergoe UI Regular'
@@ -43,11 +43,11 @@ bindsym $mod+space exec dmenu_run -fn 'Sergoe UI Regular'
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-bindsym $mod+Tab focus right
+bindsym $mod+j exec i3-window-warp focus left
+bindsym $mod+k exec i3-window-warp focus down
+bindsym $mod+l exec i3-window-warp focus up
+bindsym $mod+semicolon exec i3-window-warp focus right
+bindsym $mod+Tab exec i3-window-warp focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -98,8 +98,8 @@ bindsym $mod+x [urgent=latest] focus
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
+bindsym $mod+1 exec i3-window-warp workspace 1
+bindsym $mod+2 exec i3-window-warp workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
