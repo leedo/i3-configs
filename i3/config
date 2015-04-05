@@ -172,7 +172,7 @@ bindsym $mod+r mode "resize"
 font pango:Sergoe UI Regular
 
 bar {
-  status_command i3status
+  status_command i3status | ~/bin/i3-status
 	#font -misc-fixed-medium-r-normal-*-20-*-*-*-*-*-*-*
   colors {
     separator #bbbbbb
