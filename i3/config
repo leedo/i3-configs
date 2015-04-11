@@ -140,7 +140,7 @@ bindsym $sup+Shift+equal exec --no-startup-id xbacklight -time 250 +5
 bindsym $sup+9 exec --no-startup-id pactl set-sink-volume 1 -- -10%
 bindsym $sup+0 exec --no-startup-id pactl set-sink-volume 1 -- +10%
 
-bindsym $sup+p exec --no-startup-id screenshot
+bindsym --release $sup+p exec screenshot
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
