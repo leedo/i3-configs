@@ -2,11 +2,12 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
-    "percent": null,
+    "percent": 1,
     "type": "con",
     "nodes": [
         {
             "border": "normal",
+            "current_border_width": 3,
             "floating": "auto_off",
             "geometry": {
                "height": 1716,
@@ -14,17 +15,18 @@
                "x": 3,
                "y": 37
             },
-            "name": "New Tab - Chromium",
+            "name": "Lee Aylward - Outlook",
             "percent": 0.333333333333333,
             "swallows": [
                {
-                "class": "^Chromium$"
+                "instance": "^outlook\\.office365\\.com__owa$"
                }
             ],
             "type": "con"
         },
         {
             "border": "normal",
+            "current_border_width": 3,
             "floating": "auto_off",
             "geometry": {
                "height": 1716,
@@ -32,29 +34,30 @@
                "x": 3,
                "y": 37
             },
-            "name": "Lee Aylward - Outlook Web App",
+            "name": "(1) Twitter - Chromium",
             "percent": 0.333333333333333,
             "swallows": [
                {
-                "class": "^Chromium$"
+                "instance": "^Chromium$"
                }
             ],
             "type": "con"
         },
         {
             "border": "normal",
+            "current_border_width": 3,
             "floating": "auto_off",
             "geometry": {
-               "height": 1716,
-               "width": 3194,
-               "x": 3,
-               "y": 37
+               "height": 500,
+               "width": 742,
+               "x": 909,
+               "y": 489
             },
-            "name": "1Password",
+            "name": "1Password Beta",
             "percent": 0.333333333333333,
             "swallows": [
                {
-                "class": "^Chromium$"
+                "instance": "^1Password\\.exe$"
                }
             ],
             "type": "con"

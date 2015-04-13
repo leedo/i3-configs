@@ -1,0 +1,29 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 3,
+            "floating": "user_on",
+            "geometry": {
+               "height": 1,
+               "width": 1,
+               "x": 1280,
+               "y": 720
+            },
+            "name": null,
+            "percent": 1,
+            "swallows": [
+               {
+                "instance": "^1Password\\.exe$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

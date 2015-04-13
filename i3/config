@@ -131,14 +131,12 @@ bindsym $mod+Shift+r restart
 bindsym --release $sup+v exec --no-startup-id leepaste
 
 # brightness controls
-bindsym $sup+minus exec --no-startup-id xbacklight -time 100 -1
-bindsym $sup+equal exec --no-startup-id xbacklight -time 100 +1
-bindsym $sup+Shift+minus exec --no-startup-id xbacklight -time 250 -5
-bindsym $sup+Shift+equal exec --no-startup-id xbacklight -time 250 +5
+bindcode 232 exec --no-startup-id xbacklight -time 250 -5
+bindcode 233 exec --no-startup-id xbacklight -time 250 +5
 
 # volume
-bindsym $sup+9 exec --no-startup-id pactl set-sink-volume 1 -- -10%
-bindsym $sup+0 exec --no-startup-id pactl set-sink-volume 1 -- +10%
+bindcode 122 exec --no-startup-id pactl set-sink-volume 1 -- -10%
+bindcode 123 exec --no-startup-id pactl set-sink-volume 1 -- +10%
 
 bindsym --release $sup+p exec screenshot
 

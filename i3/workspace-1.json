@@ -1,25 +1,4 @@
-// vim:ts=4:sw=4:et
 {
-    "border": "normal",
-    "floating": "auto_off",
-    "geometry": {
-       "height": 626,
-       "width": 1122,
-       "x": 0,
-       "y": 0
-    },
-    "name": "Chats",
-    "percent": 0.5,
-    "swallows": [
-       {
-        "class": "^Xfce4\\-terminal$"
-       }
-    ],
-    "type": "con"
-}
-
-{
-    // tabbed split container with 2 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
@@ -28,6 +7,7 @@
     "nodes": [
         {
             "border": "normal",
+            "current_border_width": 3,
             "floating": "auto_off",
             "geometry": {
                "height": 652,
@@ -35,17 +15,28 @@
                "x": 0,
                "y": 0
             },
-            "name": "urxvt",
-            "percent": 0.5,
+            "name": "bash",
+            "percent": null,
             "swallows": [
                {
-                "class": "^URxvt$"
+                "instance": "^Chats$"
                }
             ],
             "type": "con"
-        },
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
         {
             "border": "normal",
+            "current_border_width": 3,
             "floating": "auto_off",
             "geometry": {
                "height": 652,
@@ -54,10 +45,10 @@
                "y": 0
             },
             "name": "urxvt",
-            "percent": 0.5,
+            "percent": null,
             "swallows": [
                {
-                "class": "^URxvt$"
+                "instance": "^urxvt$"
                }
             ],
             "type": "con"
