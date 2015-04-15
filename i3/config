@@ -131,8 +131,8 @@ bindsym $mod+Shift+r restart
 bindsym --release $sup+v exec --no-startup-id leepaste
 
 # brightness controls
-bindcode 232 exec --no-startup-id xbacklight -time 250 -5
-bindcode 233 exec --no-startup-id xbacklight -time 250 +5
+bindcode 232 exec --no-startup-id brightness down
+bindcode 233 exec --no-startup-id brightness up
 
 # volume
 bindcode 122 exec --no-startup-id vol down
