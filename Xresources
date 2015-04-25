@@ -1,0 +1,23 @@
+!URxvt.font: xft:DejaVuSansMono:size=12
+URxvt.font: xft:Monospace
+URxvt.letterSpace: -1
+URxvt.background: #111111
+URxvt.foreground: #ffffff
+URxvt.scrollBar: false
+URxvt.savelines: 256
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: chromium
+URxvt.matcher.button: 1
+!URxvt.keysym.C-k: echo -ne '\\033c'\n
+
+Xft.dpi: 140
+Xft.autohint: 1
+Xft.lcdfiler: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+Xcursor.size: 32
+
+*.color4: #000087
