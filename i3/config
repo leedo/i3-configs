@@ -35,7 +35,7 @@ bindsym $mod+Shift+q exec --no-startup-id i3-window-warp kill
 bindsym $mod+d exec --no-startup-id i3-window-warp kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec dmenu_run -fn 'Sergoe UI Regular'
+bindsym $mod+space exec dmenu_run -fn 'DejaVu Sans'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -168,16 +168,14 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-font pango:Sergoe UI Regular
+font pango:DejaVu Sans
 
 bar {
   status_command i3status | ~/bin/i3-status
-	#font -misc-fixed-medium-r-normal-*-20-*-*-*-*-*-*-*
   colors {
-    separator #bbbbbb
-    #background #222222
+    separator #aaaaaa
     background #dddddd
-    statusline #666666
+    statusline #555555
     focused_workspace #d70a53 #d70a53 #ffffff
     active_workspace #333333 #333333 #888888
     inactive_workspace #333333 #333333 #888888
