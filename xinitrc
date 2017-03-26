@@ -11,7 +11,7 @@ killall chrome
 
 xautolock -time 5 -locker screenlock &
 
-hsetroot -solid "#000000"
+hsetroot -cover lockimages/Tunnel-of-trees.png
 ulimit -c unlimited
 
 xrandr --dpi 200
