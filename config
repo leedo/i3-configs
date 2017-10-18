@@ -50,10 +50,10 @@ bindsym $mod+semicolon exec i3-window-warp focus right
 bindsym $mod+Tab exec i3-window-warp focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j exec i3-window-warp move left
@@ -62,10 +62,10 @@ bindsym $mod+Shift+l exec i3-window-warp move up
 bindsym $mod+Shift+semicolon exec i3-window-warp move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -145,11 +145,16 @@ bindcode 123 exec --no-startup-id vol up
 # 1pw
 bindsym $mod+backslash exec --no-startup-id xdotool search --name "1Password Agent" keydown Control_L+backslash
 
+bindsym $mod+Down exec --no-startup-id xdotool click 1
+bindsym $mod+Shift+Down exec --no-startup-id xdotool click 2
+bindsym $mod+Right exec --no-startup-id xdotool click 3
+
 bindsym --release $mod+p exec screenshot
 focus_follows_mouse yes
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
